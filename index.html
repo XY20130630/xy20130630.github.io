@@ -167,7 +167,7 @@
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>设</p>
 <p>$$f(i)=\sum_{j=1}^a\sum_{k=1}^b[j\times k == i]$$</p>
 <p>则</p>
-<p>\begin{aligned}<br>&amp;\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^cd(ijk)<br>=&amp;\sum_{i=1}^{ab}f(i)\times \sum_{j=1}^cd(ij)<br>=&amp;\sum_{i=1}^{ab}f(i)\times \sum_{j=1}^c\sum_{u|i}\sum_{v|j}[(u,v)==1]<br>=&amp;\sum_{u=1}^{ab}\sum_{v=1}^c[(u,v)==1]\sum_{u|i}^{ab}\times f(i)\times \lfloor \frac{c}{v}\rfloor<br>=&amp;\sum_{u=1}^{ab}\sum_{d|u}\miu(d)\times \sum_{d|v}\lfloor \frac{c}{v}\rfloor\times \sum_{u|i}^{ab}\times f(i)<br>\end{aligned}</p>
+<p>\begin{aligned}<br>&amp;\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^cd(ijk) \\<br>=&amp;\sum_{i=1}^{ab}f(i)\times \sum_{j=1}^cd(ij) \\<br>=&amp;\sum_{i=1}^{ab}f(i)\times \sum_{j=1}^c\sum_{u|i}\sum_{v|j}[(u,v)==1] \\<br>=&amp;\sum_{u=1}^{ab}\sum_{v=1}^c[(u,v)==1]\sum_{u|i}^{ab}\times f(i)\times \lfloor \frac{c}{v}\rfloor \\<br>=&amp;\sum_{u=1}^{ab}\sum_{d|u}\miu(d)\times \sum_{d|v}\lfloor \frac{c}{v}\rfloor\times \sum_{u|i}^{ab}\times f(i) \\<br>\end{aligned}</p>
 
         </div>
     
