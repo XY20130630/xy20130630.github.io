@@ -168,6 +168,9 @@
 <p>$$f(i)=\sum_{j=1}^a\sum_{k=1}^b[j\times k == i]$$</p>
 <p>则</p>
 <p>\begin{aligned}<br>&amp;\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^cd(ijk) \\<br>=&amp;\sum_{i=1}^{ab}f(i)\times \sum_{j=1}^cd(ij) \\<br>=&amp;\sum_{i=1}^{ab}f(i)\times \sum_{j=1}^c\sum_{u|i}\sum_{v|j}[(u,v)==1] \\<br>=&amp;\sum_{u=1}^{ab}\sum_{v=1}^c[(u,v)==1]\sum_{u|i}^{ab}\times f(i)\times \lfloor \frac{c}{v}\rfloor \\<br>=&amp;\sum_{u=1}^{ab}\sum_{d|u}\mu(d)\times \sum_{d|v}\lfloor \frac{c}{v}\rfloor\times \sum_{u|i}^{ab}\times f(i) \\<br>\end{aligned}</p>
+<p>然后我们发现全部都可以预处理出来！！！</p>
+<p>因为这些枚举倍数的部分都是独立的，而且单单枚举倍数是可以做到$O(n\log n)$的。</p>
+<p>所以时间复杂度就为$O(ab\log ab)$了，要卡常！</p>
 
         </div>
     
@@ -322,11 +325,11 @@
     <ul>
         
         <li>
-            <a class="footer-post" href="/categories/莫比乌斯反演/">莫比乌斯反演</a>
+            <a class="footer-post" href="/categories/Hello-world/">Hello world</a>
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/Hello-world/">Hello world</a>
+            <a class="footer-post" href="/categories/莫比乌斯反演/">莫比乌斯反演</a>
         </li>
         
         <li>
