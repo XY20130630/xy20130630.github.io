@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="test20170325总结"/>
+        <meta property="og:title" content="test20170326总结"/>
     
 
     <!--Open Graph Description-->
@@ -44,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>test20170325总结 - 彭贻豪的博客</title>
+    <title>test20170326总结 - 彭贻豪的博客</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -136,13 +136,13 @@
 
     <div class="post-header">
         <h1 class="title">
-            <a href="/2017/03/25/test20170325总结/">
-                test20170325总结
+            <a href="/2017/03/26/test20170328总结/">
+                test20170326总结
             </a>
         </h1>
         <div class="post-info">
             
-                <span class="date">2017-03-25</span>
+                <span class="date">2017-03-26</span>
             
             
             
@@ -159,28 +159,35 @@
         
 
         <!-- Post Content -->
-        <h2 id="test20170325总结"><a href="#test20170325总结" class="headerlink" title="test20170325总结"></a>test20170325总结</h2><p>做题顺序：T1-&gt;T2-&gt;T3</p>
+        <h2 id="test20170328总结"><a href="#test20170328总结" class="headerlink" title="test20170328总结"></a>test20170328总结</h2><p>做题顺序：T3-&gt;T2-&gt;T1</p>
 <a id="more"></a>
 <hr>
-<h4 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h4><p>这个题目很简单，第一眼看过去就知道可以用很多方法做出来。</p>
-<p>我选择了最稳的线段树套pbds，一会儿就写完了，过了对拍。</p>
+<h4 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h4><p>看到这种题目就我脑袋痛……</p>
+<p>第一眼看上去，我发现这是我一直做不出的一类题——不知道怎么在线段树中，将两个小区间合并成一个大区间。</p>
+<p>按照以前的（错误）思路，我写了一个自认为很优的算法。</p>
+<p>可是经过严格证明后，发现这是 $O(n^2\log n)$ 的。</p>
+<p>然后我就弃疗了。</p>
+<p>后来做了其它题之后，我回过头来，先从两个区间的情况推起。</p>
+<p>然后发现了两个区间的做法好像可以推广到 $k$ 个区间的情况。</p>
+<p>我的做法是 $O(n\log n)$ 的，但是常数有点大，有 $105$。</p>
+<p>果然被卡常了。</p>
 <p>期望得分：100分。</p>
-<p>实际得分：100分。</p>
+<p>实际得分：70分。</p>
+<p>UPD：正解好像是“类似树分治的做法”？区间上为什么有树？</p>
 <hr>
-<h4 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h4><p>做了很久都没有做出来，考虑各种方法都失败了。</p>
-<p>最后打了一个贪心，想骗一骗分。</p>
-<p>期望得分：0+</p>
-<p>实际得分：10分。</p>
-<p>upd:<br>现在还只会做第一问，把元素大小减去下标再求LIS就行了！</p>
+<h4 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h4><p>感觉好像有印象，记得好像要转化成图论的问题。</p>
+<p>结果推了半天没推出来什么东西……</p>
+<p>打了一个暴力。</p>
+<p>期望得分：40分。</p>
+<p>实际得分：40分。</p>
 <hr>
-<h4 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h4><p>这个题目也不会做。</p>
-<p>本来想打一个spfa骗一骗分，后来发现好像可以分块。</p>
-<p>可是分块打得少，直接挂掉了。</p>
-<p>期望得分：0+</p>
-<p>实际得分：0分。</p>
-<p>upd:<br>正解竟然就是spfa！！！<br>打一个spfa就可以水过去！！！</p>
+<h4 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h4><p>并不会做，看到部分分最多就先打这题了。</p>
+<p>用简单的树形dp就可以拿60分。</p>
+<p>期望得分：60分。</p>
+<p>实际得分：60分。</p>
 <hr>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>还是思路不够灵活，学过的知识点不能熟练运用。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>讲过的题目竟然不记得了！！！</p>
+<p>看来要及时总结和反思学过的内容，保证学过的内容都能熟练掌握！</p>
 
     </div>
 
@@ -387,7 +394,24 @@
 <!-- Custom JavaScript -->
 <script src="/js/main.js"></script>
 
-<!-- Disqus Comments --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- Disqus Comments --><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
