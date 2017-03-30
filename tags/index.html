@@ -89,16 +89,13 @@
 
 
 
-<meta name="description" content="彭贻豪的博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="tags">
 <meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="彭贻豪的博客">
-<meta property="og:description" content="彭贻豪的博客">
-<meta property="og:updated_time" content="2017-03-30T04:08:29.121Z">
+<meta property="og:updated_time" content="2017-03-30T04:11:09.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="彭贻豪的博客">
 
 
 
@@ -302,7 +299,14 @@
 
     
     
-      
+      <div class="tag-cloud">
+        <div class="tag-cloud-title">
+            目前共计 4 个标签
+        </div>
+        <div class="tag-cloud-tags">
+          <a href="/tags/HNOI/" style="font-size: 12px; color: #ccc">HNOI</a> <a href="/tags/Hello-world/" style="font-size: 12px; color: #ccc">Hello world</a> <a href="/tags/TEST/" style="font-size: 30px; color: #111">TEST</a> <a href="/tags/莫比乌斯反演/" style="font-size: 12px; color: #ccc">莫比乌斯反演</a>
+        </div>
+      </div>
     
   </div>
 
@@ -312,10 +316,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -361,10 +361,10 @@
             
             
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
@@ -372,10 +372,10 @@
             
             
             <div class="site-state-item site-state-tags">
-              
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 
@@ -522,6 +522,14 @@
 
   
 
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://pengyihao.disqus.com/count.js" async></script>
+    
+
+    
 
   
 
@@ -679,7 +687,37 @@
     $('.popup').click(function(e){
       e.stopPropagation();
     });
-  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -697,16 +735,8 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
-
-
-
-
-
   
 
-  
-
-  
 
   
 
