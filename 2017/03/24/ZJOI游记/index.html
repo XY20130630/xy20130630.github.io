@@ -97,7 +97,7 @@
 <meta property="og:site_name" content="彭贻豪的博客">
 <meta property="og:description" content="ZJOI考试总结
 浏览了一边题目，发现ZJOI的题目果然都是变态题。 觉得都只会做暴力，第一题的暴力好像有30分，第三题10~30分，第二题？？ 于是做题顺序为T1-&amp;gt;T3-&amp;gt;T2。">
-<meta property="og:updated_time" content="2017-03-24T04:50:35.659Z">
+<meta property="og:updated_time" content="2017-03-30T05:27:08.963Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ZJOI考试总结">
 <meta name="twitter:description" content="ZJOI考试总结
@@ -370,17 +370,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/24/ZJOI游记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/03/24/ZJOI游记/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -406,34 +395,35 @@
         <h2 id="zjoi考试总结">ZJOI考试总结</h2>
 <p>浏览了一边题目，发现ZJOI的题目果然都是变态题。 觉得都只会做暴力，第一题的暴力好像有30分，第三题10~30分，第二题？？ 于是做题顺序为T1-&gt;T3-&gt;T2。</p>
 <a id="more"></a>
+<hr>
+<h4 id="t1">T1</h4>
+<p>只会做暴力和链的情况。</p>
+<ol style="list-style-type: decimal">
+<li>链的情况就是一个简单的DP就好了。</li>
+</ol>
+<p><blockquote><p>答案不就是 $2^{n-2}$ 吗？</p>
+<footer><strong>Xie Chaocai</strong><cite>一个神犇</cite></footer></blockquote></p>
+<p>感觉很有道理～</p>
+<ol start="2" style="list-style-type: decimal">
+<li>暴力的话考虑一下DFS的性质，如果一个点 <span class="math inline">\(u\)</span> 出去的返祖边到了 <span class="math inline">\(v\)</span>，那么 <span class="math inline">\(u - v\)</span> 之间是不能有其他的返祖边的起点或终点的。 标记一下就好了 。</li>
+</ol>
+<p>期望得分：30分。</p>
 <table style="width:14%;">
 <colgroup>
 <col width="13%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left">#### T1 只会做暴力和链的情况。</td>
+<td align="left">#### T3 这个题我没有发现题解中的那个最基本的性质…… 于是直接暴力快速幂+FFT，发现竟然连30分都拿不到！会被卡常！！ 于是只有10分走人……</td>
 </tr>
 <tr class="even">
-<td align="left">1. 链的情况就是一个简单的DP就好了。</td>
-</tr>
-<tr class="odd">
-<td align="left"><blockquote><p>答案不就是 $2^{n-2}$ 吗？</p>
-<footer><strong>Xie Chaocai</strong><cite>一个神犇</cite></footer></blockquote></td>
-</tr>
-<tr class="even">
-<td align="left">感觉很有道理～</td>
-</tr>
-<tr class="odd">
-<td align="left">2. 暴力的话考虑一下DFS的性质，如果一个点 <span class="math inline">\(u\)</span> 出去的返祖边到了 <span class="math inline">\(v\)</span>，那么 <span class="math inline">\(u - v\)</span> 之间是不能有其他的返祖边的起点或终点的。 标记一下就好了 。</td>
-</tr>
-<tr class="even">
-<td align="left">期望得分：30分。</td>
+<td align="left">期望得分：10分。</td>
 </tr>
 </tbody>
 </table>
-<h4 id="t3">T3</h4>
-<p>这个题我没有发现题解中的那个最基本的性质…… 于是直接暴力快速幂+FFT，发现竟然连30分都拿不到！会被卡常！！ 于是只有10分走人……</p>
+<h4 id="t2">T2</h4>
+<p>这个题真是太变态了。 前面的随机出来的结果，竟然与后面随机出来的结果，一起对之后的询问有着影响。 于是只能搜索了，将所有随机结果的情况全部搜出来，然后暴力更新解就行了。</p>
+<p>虚的不行，不知道有没有10分。</p>
 <p>期望得分：10分。</p>
 <table style="width:14%;">
 <colgroup>
@@ -441,19 +431,10 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left">#### T2 这个题真是太变态了。 前面的随机出来的结果，竟然与后面随机出来的结果，一起对之后的询问有着影响。 于是只能搜索了，将所有随机结果的情况全部搜出来，然后暴力更新解就行了。</td>
-</tr>
-<tr class="even">
-<td align="left">虚的不行，不知道有没有10分。</td>
-</tr>
-<tr class="odd">
-<td align="left">期望得分：10分。</td>
+<td align="left">### 总结 还是姿势水平不够，对于性质题没有一点办法…… 计数题和概率题还是做少了题目，一碰到难题就挂掉……</td>
 </tr>
 </tbody>
 </table>
-<h3 id="总结">总结</h3>
-<p>还是姿势水平不够，对于性质题没有一点办法…… 计数题和概率题还是做少了题目，一碰到难题就挂掉……</p>
-<hr>
 <h4 id="某匿名神犇你zjoi崩了.">某匿名神犇：你ZJOI崩了.</h4>
 
       
@@ -535,12 +516,7 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8yNzk2NC80NTQx"></div>
     
   </div>
 
@@ -652,7 +628,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#zjoi考试总结"><span class="nav-number">1.</span> <span class="nav-text">ZJOI考试总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#t3"><span class="nav-number">1.0.1.</span> <span class="nav-text">T3</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.1.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#某匿名神犇你zjoi崩了."><span class="nav-number">1.1.1.</span> <span class="nav-text">某匿名神犇：你ZJOI崩了.</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#zjoi考试总结"><span class="nav-number">1.</span> <span class="nav-text">ZJOI考试总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#t1"><span class="nav-number">1.0.1.</span> <span class="nav-text">T1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#t2"><span class="nav-number">1.0.2.</span> <span class="nav-text">T2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#某匿名神犇你zjoi崩了."><span class="nav-number">1.0.3.</span> <span class="nav-text">某匿名神犇：你ZJOI崩了.</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -782,26 +758,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://pengyihao.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/03/24/ZJOI游记/';
-          this.page.identifier = '2017/03/24/ZJOI游记/';
-          this.page.title = 'ZJOI考试总结';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://pengyihao.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -823,6 +779,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
