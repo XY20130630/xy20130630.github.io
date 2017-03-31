@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-30T01:51:37.742Z</updated>
+  <updated>2017-03-31T03:57:23.830Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>杜教筛</title>
+    <link href="http://yoursite.com/2017/03/31/%E6%9D%9C%E6%95%99%E7%AD%9B/"/>
+    <id>http://yoursite.com/2017/03/31/杜教筛/</id>
+    <published>2017-03-31T03:56:07.000Z</published>
+    <updated>2017-03-31T03:57:23.830Z</updated>
+    
+    <content type="html"><![CDATA[<p>若</p>
+<p><span class="math display">\[h(n) = \sum_{i=1}^n f(i)\]</span></p>
+<p>则有</p>
+<p><span class="math display">\[h(n)=\sum_ {i=1}^{n}f(i)\lfloor \frac{n}{i}\rfloor-\sum_ {i=2}^{n}h(\lfloor \frac{n}{i}\rfloor)\]</span></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;若&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[h(n) = \sum_{i=1}^n f(i)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;则有&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[h(n)=\sum_ {i=1}^{n
+    
+    </summary>
+    
+      <category term="总结" scheme="http://yoursite.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>test20170330总结</title>
