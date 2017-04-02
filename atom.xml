@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-31T03:57:23.830Z</updated>
+  <updated>2017-04-02T06:43:55.828Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test20170331总结</title>
+    <link href="http://yoursite.com/2017/04/02/test20170331%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2017/04/02/test20170331总结/</id>
+    <published>2017-04-02T06:37:53.000Z</published>
+    <updated>2017-04-02T06:43:55.828Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="test20170331总结">test20170331总结</h2>
+<p>做题顺序：T3-&gt;T1-&gt;T2</p>
+<a id="more"></a>
+<hr>
+<h4 id="t1">T1</h4>
+<p>不会做……</p>
+<p>在打完第三题之后回来推了一会儿DP，结果并推不出什么，于是就交了一个暴力。</p>
+<p>期望得分：30分。</p>
+<p>实际得分：30分。</p>
+<hr>
+<h4 id="t2">T2</h4>
+<p>考场上竟然没有想到！！</p>
+<p>一看到题目，看到这么多限制条件，就想不是恶心dp就是网络流。</p>
+<p>结果都做不了。于是就弃疗了。因为有分数，所以暴力也打不出。</p>
+<p>考完之后谢超才和邱毓淞都看出了这题的本质——多重背包+二进制分组！！！</p>
+<p>看来还是基础知识不杂实……</p>
+<p>期望得分：0</p>
+<p>实际得分：0分。</p>
+<hr>
+<h4 id="t3">T3</h4>
+<p>一看到题目，发现是多次询问路径期望。</p>
+<p>因为期望有线性性质，可以单独考虑每条边。</p>
+<p>于是可以考虑<span class="math inline">\(f_i\)</span>表示从<span class="math inline">\(i\)</span>走到<span class="math inline">\(fa[i]\)</span>的期望步数，</p>
+<p><span class="math inline">\(g_i\)</span>表示从<span class="math inline">\(fa[i]\)</span>走到<span class="math inline">\(i\)</span>的期望步数。</p>
+<p>这个推一下公式就发现分母都被约掉了……</p>
+<p>为了防止被卡精度，于是我打了long long加倍增。</p>
+<p>期望得分：100</p>
+<p>实际得分：100分。</p>
+<hr>
+<h3 id="总结">总结</h3>
+<p>基础知识不够杂实。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;test20170331总结&quot;&gt;test20170331总结&lt;/h2&gt;
+&lt;p&gt;做题顺序：T3-&amp;gt;T1-&amp;gt;T2&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="TEST" scheme="http://yoursite.com/categories/TEST/"/>
+    
+    
+      <category term="TEST" scheme="http://yoursite.com/tags/TEST/"/>
+    
+  </entry>
   
   <entry>
     <title>杜教筛</title>
