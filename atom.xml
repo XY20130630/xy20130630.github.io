@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-02T06:56:46.669Z</updated>
+  <updated>2017-04-02T07:00:02.607Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/04/02/test20170401%E6%80%BB%E7%BB%93/"/>
     <id>http://yoursite.com/2017/04/02/test20170401总结/</id>
     <published>2017-04-02T06:45:42.000Z</published>
-    <updated>2017-04-02T06:56:46.669Z</updated>
+    <updated>2017-04-02T07:00:02.607Z</updated>
     
     <content type="html"><![CDATA[<h2 id="test20170401总结">test20170401总结</h2>
 <p>做题顺序：T1-&gt;T3-&gt;T2</p>
@@ -52,6 +52,7 @@
 <p>然后对于每个状态傻逼地往右扩展。</p>
 <p>最后发现只有 <span class="math inline">\(5\)</span> 种情况（包括全 <span class="math inline">\(1\)</span>，<span class="math inline">\(0\)</span>）。</p>
 <p>比较类别即可。</p>
+<p>upd: 当 <span class="math inline">\(n\)</span> 很小的时候，因为舞台不够大，有一些移动不合法，所以要交暴力。我在 <span class="math inline">\(n\leq 5\)</span> 的时候是暴力跑的。</p>
 <p>期望得分：100</p>
 <p>实际得分：100分。</p>
 <hr>
