@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-02T06:43:55.828Z</updated>
+  <updated>2017-04-02T06:56:46.669Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test20170401总结</title>
+    <link href="http://yoursite.com/2017/04/02/test20170401%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2017/04/02/test20170401总结/</id>
+    <published>2017-04-02T06:45:42.000Z</published>
+    <updated>2017-04-02T06:56:46.669Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="test20170401总结">test20170401总结</h2>
+<p>做题顺序：T1-&gt;T3-&gt;T2</p>
+<a id="more"></a>
+<hr>
+<h4 id="t1">T1</h4>
+<p>线性基的裸题。</p>
+<p>直接求出最大值的排名，然后减掉1之后计算第 <span class="math inline">\(k\)</span> 大就行了。</p>
+<p>期望得分：100分。</p>
+<p>实际得分：100分。</p>
+<hr>
+<h4 id="t2">T2</h4>
+<p>不会做，没有一点思路，暴力都不会……</p>
+<p>超才竟然有dp的思路，真是太强了，%%%orzorz</p>
+<p>期望得分：0</p>
+<p>实际得分：0分。</p>
+<hr>
+<h4 id="t3">T3</h4>
+<p>本来也是不会的。</p>
+<p>研究了一下操作发现操作可逆。双向广搜？</p>
+<p>想到ZJOI上有一个神犇曾经批判过我们盲目双向广搜，然后拿到题好像是把所有状态转移到同一个样子。</p>
+<p>于是我就想能不能把 <span class="math inline">\(1\)</span> 往左移。</p>
+<p>手玩了几发发现不管什么情况，都可以变成左边一连串 <span class="math inline">\(1\)</span>，一个<span class="math inline">\(0\)</span>，然后一个 <span class="math inline">\(1\)</span>，后面全是 <span class="math inline">\(0\)</span>；</p>
+<p>或者左边一连串 <span class="math inline">\(1\)</span>，后面全是 <span class="math inline">\(0\)</span>。</p>
+<p>然后发现对于中间间隔了一个 <span class="math inline">\(0\)</span> 的情况，<span class="math inline">\(1\)</span> 可以两个两个地增加。</p>
+<p>对于左边全是 <span class="math inline">\(1\)</span> 的情况，<span class="math inline">\(1\)</span> 可以三个三个地增加。</p>
+<p>……</p>
+<p>于是只需要对于每个状态傻逼地往左移，</p>
+<p>然后对于每个状态傻逼地往右扩展。</p>
+<p>最后发现只有 <span class="math inline">\(5\)</span> 种情况（包括全 <span class="math inline">\(1\)</span>，<span class="math inline">\(0\)</span>）。</p>
+<p>比较类别即可。</p>
+<p>期望得分：100</p>
+<p>实际得分：100分。</p>
+<hr>
+<h3 id="总结">总结</h3>
+<p>思路有点局限？</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;test20170401总结&quot;&gt;test20170401总结&lt;/h2&gt;
+&lt;p&gt;做题顺序：T1-&amp;gt;T3-&amp;gt;T2&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="TEST" scheme="http://yoursite.com/categories/TEST/"/>
+    
+    
+      <category term="TEST" scheme="http://yoursite.com/tags/TEST/"/>
+    
+  </entry>
   
   <entry>
     <title>test20170331总结</title>
