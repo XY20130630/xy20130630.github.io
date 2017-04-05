@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-05T06:12:41.299Z</updated>
+  <updated>2017-04-05T06:15:11.124Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/04/05/test20170405%E6%80%BB%E7%BB%93/"/>
     <id>http://yoursite.com/2017/04/05/test20170405总结/</id>
     <published>2017-04-05T05:53:44.000Z</published>
-    <updated>2017-04-05T06:12:41.299Z</updated>
+    <updated>2017-04-05T06:15:11.124Z</updated>
     
     <content type="html"><![CDATA[<h2 id="test20170405总结">test20170405总结</h2>
 <p>做题顺序：T1-&gt;T3-&gt;T2</p>
@@ -56,6 +56,9 @@
 <p>实际得分：30分。</p>
 <hr>
 <h3 id="总结">总结</h3>
+<p>期望得分：260</p>
+<p>实际得分：95……</p>
+<p>好尴尬啊</p>
 <p>两天没考试，手又生了……</p>
 <p>总是莫名其妙的错误……</p>
 ]]></content>
