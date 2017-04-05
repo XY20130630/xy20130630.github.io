@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-05T06:09:46.151Z</updated>
+  <updated>2017-04-05T06:12:41.299Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/04/05/test20170405%E6%80%BB%E7%BB%93/"/>
     <id>http://yoursite.com/2017/04/05/test20170405总结/</id>
     <published>2017-04-05T05:53:44.000Z</published>
-    <updated>2017-04-05T06:09:46.151Z</updated>
+    <updated>2017-04-05T06:12:41.299Z</updated>
     
     <content type="html"><![CDATA[<h2 id="test20170405总结">test20170405总结</h2>
 <p>做题顺序：T1-&gt;T3-&gt;T2</p>
@@ -32,26 +32,26 @@
 <p>然后剩下的问题就转化为，在一根数轴上有 <span class="math inline">\(n\)</span> 个点，在上面取 <span class="math inline">\(m\)</span> 个点，使得两两距离不小于 <span class="math inline">\(d\)</span> 的方案数。</p>
 <p>这直接用组合数就可以求了。</p>
 <p>所以是 <span class="math inline">\(O(nm)\)</span> 的？</p>
-<p>** 不知道为什么答案错了～**</p>
+<p><strong>不知道为什么答案错了～</strong></p>
 <p>期望得分：100分。</p>
 <p>实际得分：20分。</p>
 <hr>
 <h4 id="t2">T2</h4>
 <p>并不会做……</p>
 <p>用 <span class="math inline">\(f[i][j][k]\)</span> 表示从 <span class="math inline">\(i\)</span> 到 <span class="math inline">\(j\)</span> 走了 <span class="math inline">\(k\)</span> 条边的最长路的长度，每次转移的时候判一下有没有正环即可了……</p>
-<p>** 这个做法显然是对的，而且十分好写，可还是挂掉了…… **</p>
+<p><strong>这个做法显然是对的，而且十分好写，可还是挂掉了……</strong></p>
 <p>期望得分：60</p>
 <p>实际得分：45分。</p>
 <hr>
 <h4 id="t3">T3</h4>
-<p>** 这是最惨的一道题。 **</p>
+<p><strong>这是最惨的一道题。</strong></p>
 <p>我的做法是先缩点，然后枚举右边区间的端点，再用set维护左边区间。</p>
 <p>是 <span class="math inline">\(O(10^6\log 10^6)\)</span> 的。</p>
-<p>** 但是因为题目中没有说明 <span class="math inline">\(A[i]\)</span> 的范围！！！ **</p>
-<p>** 我以为是 <span class="math inline">\(1000000\)</span> 级别的！！！ **</p>
-<p>** 没有用MAP！！！ **</p>
-<p>** 然后RE辣！！！ **</p>
-<p>** 加了一个MAP就AC了！！！ **</p>
+<p><strong>但是因为题目中没有说明 <span class="math inline">\(A[i]\)</span> 的范围！！！</strong></p>
+<p><strong>我以为是 <span class="math inline">\(1000000\)</span> 级别的！！！</strong></p>
+<p><strong>没有用MAP！！！</strong></p>
+<p><strong>然后RE辣！！！</strong></p>
+<p><strong>加了一个MAP就AC了！！！</strong></p>
 <p>期望得分：100</p>
 <p>实际得分：30分。</p>
 <hr>
