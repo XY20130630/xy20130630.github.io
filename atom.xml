@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-05T06:53:26.526Z</updated>
+  <updated>2017-04-06T06:20:11.947Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test20170406总结</title>
+    <link href="http://yoursite.com/2017/04/06/test20170406%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2017/04/06/test20170406总结/</id>
+    <published>2017-04-06T06:12:56.000Z</published>
+    <updated>2017-04-06T06:20:11.947Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="test20170406总结">test20170406总结</h2>
+<p>做题顺序：T1-&gt;T2-&gt;T3-&gt;T1</p>
+<a id="more"></a>
+<hr>
+<h4 id="t1">T1</h4>
+<p>这个题目我想到了标算的一半，将 <span class="math inline">\(i^j\)</span> 转化成了 <span class="math inline">\(i\)</span> 只有不到 <span class="math inline">\(30\)</span> 而且是 <span class="math inline">\(i\cdot j\)</span> 的问题。</p>
+<p>但是正解后面的部分我完全没有想法。</p>
+<p>由于做这题的时候时间还很充裕，所以我想了N多错误做法，一一对拍卡掉，最后只能弃疗了。</p>
+<p>关键是picks没有给我的这个部分分！！！</p>
+<p>我可以做 <span class="math inline">\(n,m\leq 10^5\)</span> 的情况，但是picks的70分只有 <span class="math inline">\(n\leq 10^5\)</span>……</p>
+<p>期望得分：40分。</p>
+<p>实际得分：40分。</p>
+<hr>
+<h4 id="t2">T2</h4>
+<p>发现这个题目构造的图就是一些不相交的环。</p>
+<p>于是每个点只有一条出边、一条入边。</p>
+<p>用 <span class="math inline">\(f[i][j]\)</span> 表示前 <span class="math inline">\(i\)</span> 个点往外连边之后，每个点是否有入边的状态是 <span class="math inline">\(j\)</span>，状压dp即可。</p>
+<p>期望得分：60</p>
+<p>实际得分：60分。</p>
+<hr>
+<h4 id="t3">T3</h4>
+<p><span class="math inline">\(30\)</span> 分的暴力直接用高精度。</p>
+<p>然后另外 <span class="math inline">\(30\)</span> 分的暴力直接模拟就好了。</p>
+<p>期望得分：60</p>
+<p>实际得分：60分。</p>
+<hr>
+<h3 id="总结">总结</h3>
+<p>期望得分：160</p>
+<p>实际得分：160……</p>
+<p>今天对了拍，真是特别稳。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;test20170406总结&quot;&gt;test20170406总结&lt;/h2&gt;
+&lt;p&gt;做题顺序：T1-&amp;gt;T2-&amp;gt;T3-&amp;gt;T1&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="TEST" scheme="http://yoursite.com/categories/TEST/"/>
+    
+    
+      <category term="TEST" scheme="http://yoursite.com/tags/TEST/"/>
+    
+  </entry>
   
   <entry>
     <title>HNOI2014解题报告</title>
