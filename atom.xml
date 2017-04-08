@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-07T11:48:53.689Z</updated>
+  <updated>2017-04-08T07:42:54.991Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test20170408总结</title>
+    <link href="http://yoursite.com/2017/04/08/test20170408%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2017/04/08/test20170408总结/</id>
+    <published>2017-04-08T07:32:05.000Z</published>
+    <updated>2017-04-08T07:42:54.991Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="test20170408总结">test20170408总结</h2>
+<p>做题顺序：T1-&gt;T2-&gt;T3</p>
+<a id="more"></a>
+<hr>
+<h4 id="t1">T1</h4>
+<p>首先，我把题目转化为求一个点为根的时候子树中深度最大的点的深度。</p>
+<p>这个子树查询+树的形态修改的问题的经典做法是维护实链上的虚边连出去的子树的信息。</p>
+<p>但是在这题中，实链上的每个节点的虚儿子的信息都统计出来后，仍然无法得到这条实链的答案。</p>
+<p>所以我就不会做了……</p>
+<p>所以在考试快结束的时候写了一个暴力，得分超出预计啊。</p>
+<p>谢超才使用了维护树的直径的做法。</p>
+<p>他的思路与我的不同，因为在树中，与一个点的距离最大的点一定是直径的一端。</p>
+<p>那么只要维护直径就好了。这个很容易。</p>
+<p>期望得分：20分。</p>
+<p>实际得分：40分？？。</p>
+<hr>
+<h4 id="t2">T2</h4>
+<p>不会做。</p>
+<p>感觉这道题就是01背包啊，没听说过01背包还有优化做法。</p>
+<p>期望得分：20</p>
+<p>实际得分：20分。</p>
+<hr>
+<h4 id="t3">T3</h4>
+<p>这个题目想了很久，仍然没有思路。</p>
+<p>于是直接枚举矩阵，然后暴力判断。</p>
+<p>期望得分：10</p>
+<p>实际得分：10分。</p>
+<hr>
+<h3 id="总结">总结</h3>
+<p>期望得分：50</p>
+<p>实际得分：70</p>
+<p>思路还是太狭隘了，没有真正打开。</p>
+<p>不善于变通，做题的时候容易钻到死胡同里面出不来。</p>
+<p>一味追求正解。如果第一题一开始就打暴力的话，可能由暴力算法联想到直径。</p>
+<p>这次考试告诉我，我的数据结构题目还是做得太少，对于经典算法的应用与扩展不够熟练。</p>
+<p>还是要多见识题目，扩宽自己的视野，释放被拘束的思维！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;test20170408总结&quot;&gt;test20170408总结&lt;/h2&gt;
+&lt;p&gt;做题顺序：T1-&amp;gt;T2-&amp;gt;T3&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="TEST" scheme="http://yoursite.com/categories/TEST/"/>
+    
+    
+      <category term="TEST" scheme="http://yoursite.com/tags/TEST/"/>
+    
+  </entry>
   
   <entry>
     <title>HNOI2015解题报告</title>
