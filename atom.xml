@@ -99,34 +99,6 @@
   </entry>
   
   <entry>
-    <title>top tree学习笔记</title>
-    <link href="http://yoursite.com/2017/04/10/top-tree%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2017/04/10/top-tree学习笔记/</id>
-    <published>2017-04-10T10:54:33.000Z</published>
-    <updated>2017-04-10T11:00:35.466Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="toptree-学习笔记">Toptree 学习笔记</h1>
-<p>Toptree 这种技巧，就是在LCT中用splay维护虚子树。</p>
-<p>对于一个结点，它的虚儿子们可以表示成下面这个图。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;toptree-学习笔记&quot;&gt;Toptree 学习笔记&lt;/h1&gt;
-&lt;p&gt;Toptree 这种技巧，就是在LCT中用splay维护虚子树。&lt;/p&gt;
-&lt;p&gt;对于一个结点，它的虚儿子们可以表示成下面这个图。&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="toptree" scheme="http://yoursite.com/tags/toptree/"/>
-    
-  </entry>
-  
-  <entry>
     <title>test20170408总结</title>
     <link href="http://yoursite.com/2017/04/08/test20170408%E6%80%BB%E7%BB%93/"/>
     <id>http://yoursite.com/2017/04/08/test20170408总结/</id>
