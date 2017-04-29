@@ -107,19 +107,16 @@
 
 
 
-<meta name="description" content="test20170401总结
-做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
+<meta name="description" content="test20170401总结做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test20170401总结">
 <meta property="og:url" content="http://yoursite.com/2017/04/02/test20170401总结/index.html">
 <meta property="og:site_name" content="彭贻豪的博客">
-<meta property="og:description" content="test20170401总结
-做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
+<meta property="og:description" content="test20170401总结做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
 <meta property="og:updated_time" content="2017-04-02T07:00:02.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test20170401总结">
-<meta name="twitter:description" content="test20170401总结
-做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
+<meta name="twitter:description" content="test20170401总结做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
 
 
 
@@ -420,42 +417,37 @@
       
 
       
-        <h2 id="test20170401总结">test20170401总结</h2>
-<p>做题顺序：T1-&gt;T3-&gt;T2</p>
+        <h2 id="test20170401总结"><a href="#test20170401总结" class="headerlink" title="test20170401总结"></a>test20170401总结</h2><p>做题顺序：T1-&gt;T3-&gt;T2</p>
 <a id="more"></a>
 <hr>
-<h4 id="t1">T1</h4>
-<p>线性基的裸题。</p>
-<p>直接求出最大值的排名，然后减掉1之后计算第 <span class="math inline">\(k\)</span> 大就行了。</p>
+<h4 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h4><p>线性基的裸题。</p>
+<p>直接求出最大值的排名，然后减掉1之后计算第 $k$ 大就行了。</p>
 <p>期望得分：100分。</p>
 <p>实际得分：100分。</p>
 <hr>
-<h4 id="t2">T2</h4>
-<p>不会做，没有一点思路，暴力都不会……</p>
+<h4 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h4><p>不会做，没有一点思路，暴力都不会……</p>
 <p>超才竟然有dp的思路，真是太强了，%%%orzorz</p>
 <p>期望得分：0</p>
 <p>实际得分：0分。</p>
 <hr>
-<h4 id="t3">T3</h4>
-<p>本来也是不会的。</p>
+<h4 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h4><p>本来也是不会的。</p>
 <p>研究了一下操作发现操作可逆。双向广搜？</p>
 <p>想到ZJOI上有一个神犇曾经批判过我们盲目双向广搜，然后拿到题好像是把所有状态转移到同一个样子。</p>
-<p>于是我就想能不能把 <span class="math inline">\(1\)</span> 往左移。</p>
-<p>手玩了几发发现不管什么情况，都可以变成左边一连串 <span class="math inline">\(1\)</span>，一个<span class="math inline">\(0\)</span>，然后一个 <span class="math inline">\(1\)</span>，后面全是 <span class="math inline">\(0\)</span>；</p>
-<p>或者左边一连串 <span class="math inline">\(1\)</span>，后面全是 <span class="math inline">\(0\)</span>。</p>
-<p>然后发现对于中间间隔了一个 <span class="math inline">\(0\)</span> 的情况，<span class="math inline">\(1\)</span> 可以两个两个地增加。</p>
-<p>对于左边全是 <span class="math inline">\(1\)</span> 的情况，<span class="math inline">\(1\)</span> 可以三个三个地增加。</p>
+<p>于是我就想能不能把 $1$ 往左移。</p>
+<p>手玩了几发发现不管什么情况，都可以变成左边一连串 $1$，一个$0$，然后一个 $1$，后面全是 $0$；</p>
+<p>或者左边一连串 $1$，后面全是 $0$。</p>
+<p>然后发现对于中间间隔了一个 $0$ 的情况，$1$ 可以两个两个地增加。</p>
+<p>对于左边全是 $1$ 的情况，$1$ 可以三个三个地增加。</p>
 <p>……</p>
 <p>于是只需要对于每个状态傻逼地往左移，</p>
 <p>然后对于每个状态傻逼地往右扩展。</p>
-<p>最后发现只有 <span class="math inline">\(5\)</span> 种情况（包括全 <span class="math inline">\(1\)</span>，<span class="math inline">\(0\)</span>）。</p>
+<p>最后发现只有 $5$ 种情况（包括全 $1$，$0$）。</p>
 <p>比较类别即可。</p>
-<p>upd: 当 <span class="math inline">\(n\)</span> 很小的时候，因为舞台不够大，有一些移动不合法，所以要交暴力。我在 <span class="math inline">\(n\leq 5\)</span> 的时候是暴力跑的。</p>
+<p>upd: 当 $n$ 很小的时候，因为舞台不够大，有一些移动不合法，所以要交暴力。我在 $n\leq 5$ 的时候是暴力跑的。</p>
 <p>期望得分：100</p>
 <p>实际得分：100分。</p>
 <hr>
-<h3 id="总结">总结</h3>
-<p>思路有点局限？</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>思路有点局限？</p>
 
       
     </div>
@@ -666,7 +658,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#test20170401总结"><span class="nav-number">1.</span> <span class="nav-text">test20170401总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#t1"><span class="nav-number">1.0.1.</span> <span class="nav-text">T1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#t2"><span class="nav-number">1.0.2.</span> <span class="nav-text">T2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#t3"><span class="nav-number">1.0.3.</span> <span class="nav-text">T3</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.1.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#test20170401总结"><span class="nav-number">1.</span> <span class="nav-text">test20170401总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#T1"><span class="nav-number">1.0.1.</span> <span class="nav-text">T1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#T2"><span class="nav-number">1.0.2.</span> <span class="nav-text">T2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#T3"><span class="nav-number">1.0.3.</span> <span class="nav-text">T3</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.1.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
             
 
           </div>

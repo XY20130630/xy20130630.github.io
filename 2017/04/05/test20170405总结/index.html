@@ -107,19 +107,16 @@
 
 
 
-<meta name="description" content="test20170405总结
-做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
+<meta name="description" content="test20170405总结做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test20170405总结">
 <meta property="og:url" content="http://yoursite.com/2017/04/05/test20170405总结/index.html">
 <meta property="og:site_name" content="彭贻豪的博客">
-<meta property="og:description" content="test20170405总结
-做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
+<meta property="og:description" content="test20170405总结做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
 <meta property="og:updated_time" content="2017-04-05T06:15:11.124Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test20170405总结">
-<meta name="twitter:description" content="test20170405总结
-做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
+<meta name="twitter:description" content="test20170405总结做题顺序：T1-&amp;gt;T3-&amp;gt;T2">
 
 
 
@@ -420,41 +417,36 @@
       
 
       
-        <h2 id="test20170405总结">test20170405总结</h2>
-<p>做题顺序：T1-&gt;T3-&gt;T2</p>
+        <h2 id="test20170405总结"><a href="#test20170405总结" class="headerlink" title="test20170405总结"></a>test20170405总结</h2><p>做题顺序：T1-&gt;T3-&gt;T2</p>
 <a id="more"></a>
 <hr>
-<h4 id="t1">T1</h4>
-<p>我的做法是枚举每一条线段，对于长度相等、斜率相等的线段只需要枚举一根就可以了，只要枚举端点在左上角或左上角的就行，这个是 <span class="math inline">\(O(nm)\)</span> 的。</p>
+<h4 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h4><p>我的做法是枚举每一条线段，对于长度相等、斜率相等的线段只需要枚举一根就可以了，只要枚举端点在左上角或左上角的就行，这个是 $O(nm)$ 的。</p>
 <p>然后对于每根线段，它的起点能放在哪些地方，这个范围很容易求，把答案乘起来就好了。</p>
-<p>然后剩下的问题就转化为，在一根数轴上有 <span class="math inline">\(n\)</span> 个点，在上面取 <span class="math inline">\(m\)</span> 个点，使得两两距离不小于 <span class="math inline">\(d\)</span> 的方案数。</p>
+<p>然后剩下的问题就转化为，在一根数轴上有 $n$ 个点，在上面取 $m$ 个点，使得两两距离不小于 $d$ 的方案数。</p>
 <p>这直接用组合数就可以求了。</p>
-<p>所以是 <span class="math inline">\(O(nm)\)</span> 的？</p>
+<p>所以是 $O(nm)$ 的？</p>
 <p><strong>不知道为什么答案错了～</strong></p>
 <p>期望得分：100分。</p>
 <p>实际得分：20分。</p>
 <hr>
-<h4 id="t2">T2</h4>
-<p>并不会做……</p>
-<p>用 <span class="math inline">\(f[i][j][k]\)</span> 表示从 <span class="math inline">\(i\)</span> 到 <span class="math inline">\(j\)</span> 走了 <span class="math inline">\(k\)</span> 条边的最长路的长度，每次转移的时候判一下有没有正环即可了……</p>
+<h4 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h4><p>并不会做……</p>
+<p>用 $f[i][j][k]$ 表示从 $i$ 到 $j$ 走了 $k$ 条边的最长路的长度，每次转移的时候判一下有没有正环即可了……</p>
 <p><strong>这个做法显然是对的，而且十分好写，可还是挂掉了……</strong></p>
 <p>期望得分：60</p>
 <p>实际得分：45分。</p>
 <hr>
-<h4 id="t3">T3</h4>
-<p><strong>这是最惨的一道题。</strong></p>
+<h4 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h4><p><strong>这是最惨的一道题。</strong></p>
 <p>我的做法是先缩点，然后枚举右边区间的端点，再用set维护左边区间。</p>
-<p>是 <span class="math inline">\(O(10^6\log 10^6)\)</span> 的。</p>
-<p><strong>但是因为题目中没有说明 <span class="math inline">\(A[i]\)</span> 的范围！！！</strong></p>
-<p><strong>我以为是 <span class="math inline">\(1000000\)</span> 级别的！！！</strong></p>
+<p>是 $O(10^6\log 10^6)$ 的。</p>
+<p><strong>但是因为题目中没有说明 $A[i]$ 的范围！！！</strong></p>
+<p><strong>我以为是 $1000000$ 级别的！！！</strong></p>
 <p><strong>没有用MAP！！！</strong></p>
 <p><strong>然后RE辣！！！</strong></p>
 <p><strong>加了一个MAP就AC了！！！</strong></p>
 <p>期望得分：100</p>
 <p>实际得分：30分。</p>
 <hr>
-<h3 id="总结">总结</h3>
-<p>期望得分：260</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>期望得分：260</p>
 <p>实际得分：95……</p>
 <p>好尴尬啊</p>
 <p>两天没考试，手又生了……</p>
@@ -669,7 +661,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#test20170405总结"><span class="nav-number">1.</span> <span class="nav-text">test20170405总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#t1"><span class="nav-number">1.0.1.</span> <span class="nav-text">T1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#t2"><span class="nav-number">1.0.2.</span> <span class="nav-text">T2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#t3"><span class="nav-number">1.0.3.</span> <span class="nav-text">T3</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.1.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#test20170405总结"><span class="nav-number">1.</span> <span class="nav-text">test20170405总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#T1"><span class="nav-number">1.0.1.</span> <span class="nav-text">T1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#T2"><span class="nav-number">1.0.2.</span> <span class="nav-text">T2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#T3"><span class="nav-number">1.0.3.</span> <span class="nav-text">T3</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.1.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
             
 
           </div>
